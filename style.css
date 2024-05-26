@@ -90,7 +90,7 @@ a {
     grid-template-rows: ifr 4fr 1fr;
     grid-auto-columns: ifr 4fr 1fr;
     grid-gap: 5px;
-    height: 85vh;
+    height: 20rem;
   }
 
   #siteAds {
@@ -105,6 +105,6 @@ a {
     grid-template-rows: ifr 4fr 1fr;
     grid-auto-columns: ifr 4fr 1fr;
     grid-gap: 5px;
-    height: 85vh;
+    height: 20rem;
   }
 }
