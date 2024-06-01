@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FCE2C7;
+}
+
+header {
+  background: rgb(243,236,15);
+  background: linear-gradient(0deg, rgba(243,236,15,1) 0%, rgba(230,218,9,1) 31%, rgba(255,241,55,1) 47%, rgba(250,233,31,1) 75%, rgba(245,226,9,1) 100%);
+  padding: 10px;
+  text-align: center;
+}
+
+.logo {
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  background-color: #D59C38;
+  margin: 5px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 1px 1px 2px #5e5e5e;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: none;
+  transition: all 0.1s ease-out;
+}
+
+nav {
+  text-align: center;
+}
+
+#lstan {
+  width: 300px;
+  height: 260px;
+}
+
+article {
+  font-size: 16px;
+  padding: 10px;
+}
+
+footer {
+  background-color: #E79E51;
+  padding: 10px;
+  height: 110px;
+}
+
+#logofooter {
+  height: 80px;
+  width: 80px;
+}
+
+.footerabsolute {
+  position: absolute;
+}
+
+a {
+  color: #314deb;
+}
+
+.hint {
+  color: grey;
+}
+
+#pageHeader {
+  grid-area: header;
+}
+
+#pageFooter {
+  grid-area: footer;
+}
+
+#mainArticle {
+  grid-area: article;
+}
+
+#mainNav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+}
+
+#siteAds {
+  grid-area: ads;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header" 
+      "nav nav nav"
+      "article article ads" 
+      "footer footer footer";
+    grid-template-rows: ifr 4fr 1fr;
+    grid-auto-columns: ifr 4fr 1fr;
+    grid-gap: 5px;
+  }
+
+  #siteAds {
+    max-width: 500px;
+  }
+
+  #mainArticle {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    display: grid;
+    grid-template-areas: "header" "nav" "article" "ads" "footer";
+    grid-template-rows: ifr 4fr 1fr;
+    grid-auto-columns: ifr 4fr 1fr;
+    grid-gap: 5px;
+  }
+
+  #siteAds {
+    padding: 10px;
+  }
+
+  #lstan {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.iconsmall {
+  height: 20px;
+  width: 20px;
+}
+
+.gallery {
+  width: 200px;
+  height: 100px;
+}
